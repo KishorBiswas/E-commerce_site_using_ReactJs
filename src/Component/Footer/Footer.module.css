@@ -1,0 +1,108 @@
+.footerWrapper{
+    width: 100%;
+    margin-top: -1rem;
+}
+
+.footerWrapper>hr {
+    width: 100%;
+    height: 1px;
+    background-color: #ffff;
+    border: none;
+    outline: none;
+}
+
+.cFooter{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.logo{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.logo>img{
+    width: 2.5rem;
+    height: 2.5rem;
+    
+}
+
+.logo>span{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 2.6rem;
+    margin-left: 5px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    max-width: 15rem;
+    gap: 0.5rem;
+}
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    font-size: 0.8rem;
+    font-style: italic;
+    gap: 0.6rem;
+}
+.detail>span:nth-child(1){
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size:1.5rem;
+    font-style: normal;
+}
+.pngLine:hover{
+    cursor: pointer;
+}
+
+.pngLine{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon{
+    font-size: 20px;
+    
+}
+
+.copyRight{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box;
+    font-size: 0.65rem;
+    margin-top: 2rem;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .cFooter{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+        font-size: 1.7rem;
+    }
+
+
+}
+
+@media screen and (max-width:640px) {
+    .cFooter{
+        justify-content: center;
+    }
+
+    .logo{
+        display: none;
+    }
+}
