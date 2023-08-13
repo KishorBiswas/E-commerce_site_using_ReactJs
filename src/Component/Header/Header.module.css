@@ -108,7 +108,7 @@
         text-align: center;
        
     }
-    .menu>li{
+    .menu.mobile_Ui>li{
         margin-top: 3px;
     }
     .menuBar{
