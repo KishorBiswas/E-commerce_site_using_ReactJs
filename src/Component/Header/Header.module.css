@@ -98,10 +98,13 @@
     }
 
     .menu{
+        display: none;
+    }
+    .menu.mobile_Ui{
         flex-direction: column;
         margin-left: -1rem;
         font-size: 16px;
-        display: none;
+        display: block;
         text-align: center;
        
     }

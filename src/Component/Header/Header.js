@@ -8,7 +8,7 @@ import { IoCloseSharp } from "react-icons/io5";
 
 let Header = () => {
 
-    let [showMenu, setShowMenu] = useState(true);
+    let [showMenu, setShowMenu] = useState(false);
     let menuToggle = () => {setShowMenu((showMenu) => !showMenu )};
     return(
         <div className={css.container}>
@@ -22,8 +22,9 @@ let Header = () => {
                 <div className={css.menuBar}>
                    <FaBars onClick={menuToggle}/>
                 </div>
-                <div className={css.menu} style={{display: showMenu? "inherit" : "none"}}>
-                    <ul className={css.menu} style={{display: showMenu? "inherit" : "none"}}>
+                {/* style={{display: showMenu? "inherit" : "none"}} */}
+                <div className={showMenu ? `${css.menu} ${css.mobile_Ui}` : css.menu} >
+                    <ul className={showMenu ? `${css.menu} ${css.mobile_Ui}` : css.menu} >
                         <li>Collection</li>
                         <li>Brand</li>
                         <li>New</li>
