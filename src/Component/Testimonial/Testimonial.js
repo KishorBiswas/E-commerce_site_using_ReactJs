@@ -41,7 +41,6 @@ function Testimonial() {
             slidesPerGroup={1}
             autoplay = {{
                 delay: 4500,
-            
                 disableOnInteraction: false,
             }}
             loop = {true}
